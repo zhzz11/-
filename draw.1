@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="smart-account-arch" name="智能记账助手系统架构">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- 整体背景 -->
+        <mxCell id="bg" value="" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="800" height="460" as="geometry"/>
+        </mxCell>
+
+        <!-- 顶部标题 -->
+        <mxCell id="title" value="智能记账助手信息系统" style="rounded=0;strokeColor=#000000;fillColor=#f8cecc;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="800" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 左侧：安全支撑体系 -->
+        <mxCell id="leftBar" value="安全支撑体系" style="rounded=0;strokeColor=#000000;fillColor=#dae8fc;verticalAlign=middle;align=center;fontSize=14;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="40" height="460" as="geometry"/>
+        </mxCell>
+
+        <!-- 右侧：管理与监控体系 -->
+        <mxCell id="rightBar" value="管理与监控体系" style="rounded=0;strokeColor=#000000;fillColor=#dae8fc;verticalAlign=middle;align=center;fontSize=14;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="920" y="80" width="40" height="460" as="geometry"/>
+        </mxCell>
+
+        <!-- 表现层背景 -->
+        <mxCell id="layer1" value="表现层" style="rounded=0;strokeColor=#000000;fillColor=#ffe6cc;align=left;verticalAlign=top;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="760" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- 表现层：系统门户 -->
+        <mxCell id="p1" value="系统门户" style="rounded=0;strokeColor=#000000;fillColor=#fff2cc;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 表现层：Web 前端 -->
+        <mxCell id="p2" value="Web 前端" style="rounded=0;strokeColor=#000000;fillColor=#fff2cc;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="110" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 表现层：移动端 App -->
+        <mxCell id="p3" value="移动端 App" style="rounded=0;strokeColor=#000000;fillColor=#fff2cc;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="480" y="110" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 表现层：第三方接口 -->
+        <mxCell id="p4" value="第三方系统接入（微信/支付宝等）" style="rounded=0;strokeColor=#000000;fillColor=#fff2cc;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="110" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 业务逻辑层背景 -->
+        <mxCell id="layer2" value="业务逻辑层" style="rounded=0;strokeColor=#000000;fillColor=#d5e8d4;align=left;verticalAlign=top;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="190" width="760" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- 业务逻辑层模块 -->
+        <mxCell id="b1" value="账目管理模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="160" y="210" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b2" value="分类与科目管理模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="340" y="210" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b3" value="预算与提醒模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b4" value="报表与可视化模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="210" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b5" value="OCR 票据识别模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b6" value="智能分析与推荐模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="270" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b7" value="用户与权限管理模块" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="270" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 数据访问层背景 -->
+        <mxCell id="layer3" value="数据访问层" style="rounded=0;strokeColor=#000000;fillColor=#e1d5e7;align=left;verticalAlign=top;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="360" width="760" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d1" value="数据访问组件（DAO）" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="380" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d2" value="缓存与会话管理组件" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d3" value="日志与审计组件" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 基础硬件层背景 -->
+        <mxCell id="layer4" value="基础硬件层" style="rounded=0;strokeColor=#000000;fillColor=#cfe2f3;align=left;verticalAlign=top;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="450" width="760" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- 基础硬件层：服务器 -->
+        <mxCell id="h1" value="应用服务器" style="ellipse;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="h2" value="数据库服务器" style="ellipse;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="h3" value="备份与存储设备" style="ellipse;strokeColor=#000000;fillColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="740" y="470" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
