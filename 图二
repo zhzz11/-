@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="smart-func-arch" name="智能记账助手系统功能结构图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- 顶部系统名称 -->
+        <mxCell id="title" value="智能记账助手系统" style="rounded=0;strokeColor=#000000;fillColor=#f8cecc;fontSize=16;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="600" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 一级功能：账目管理 -->
+        <mxCell id="f1" value="账目管理" style="rounded=0;strokeColor=#000000;fillColor=#dae8fc;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 账目管理子功能 -->
+        <mxCell id="f1_1" value="账单录入" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="160" y="230" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f1_2" value="账单修改/删除" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f1_3" value="账单查询" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="160" y="330" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 一级功能：分类管理 -->
+        <mxCell id="f2" value="分类管理" style="rounded=0;strokeColor=#000000;fillColor=#b7e1cd;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="380" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 分类管理子功能 -->
+        <mxCell id="f2_1" value="收入/支出分类维护" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="390" y="230" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2_2" value="自定义分类" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2_3" value="分类统计" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="390" y="330" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 一级功能：预算管理 -->
+        <mxCell id="f3" value="预算管理" style="rounded=0;strokeColor=#000000;fillColor=#ffe6cc;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 预算管理子功能 -->
+        <mxCell id="f3_1" value="预算设置" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="230" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f3_2" value="预算提醒" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="280" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f3_3" value="预算执行分析" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="330" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 一级功能：统计分析 -->
+        <mxCell id="f4" value="统计分析" style="rounded=0;strokeColor=#000000;fillColor=#f5c9c9;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="840" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 统计分析子功能 -->
+        <mxCell id="f4_1" value="收支趋势分析" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="230" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f4_2" value="分类占比图表" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="280" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f4_3" value="年度报表生成" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="330" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 一级功能：系统管理 -->
+        <mxCell id="f5" value="系统管理" style="rounded=0;strokeColor=#000000;fillColor=#d5e8d4;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- 系统管理子功能 -->
+        <mxCell id="f5_1" value="用户管理" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="230" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f5_2" value="权限管理" style="rounded=0;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="280" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
