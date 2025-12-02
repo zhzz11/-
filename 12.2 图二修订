@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="bill-input-flow" name="账单录入流程图（美化版）">
+    <mxGraphModel dx="1428" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- 开始 -->
+        <mxCell id="start" value="开始"
+          style="ellipse;html=1;strokeWidth=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 用户进入账单录入界面 -->
+        <mxCell id="step1" value="用户进入账单录入界面"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="250" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 输入账单信息 -->
+        <mxCell id="step2" value="输入账单信息（金额/类型/分类/日期/备注）"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="250" y="200" width="400" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- OCR 判断 -->
+        <mxCell id="decision" value="系统是否启用 OCR 识别？"
+          style="rhombus;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- OCR YES：解析图片 -->
+        <mxCell id="ocrYes" value="解析图片生成账单草稿"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="350" y="420" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- OCR NO：手动填写 -->
+        <mxCell id="ocrNo" value="用户手动填写账单"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="620" y="320" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 用户确认提交 -->
+        <mxCell id="step3" value="用户确认提交账单"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 保存数据库 -->
+        <mxCell id="step4" value="系统保存账单至数据库"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="330" y="580" width="260" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 返回结果 -->
+        <mxCell id="step5" value="返回录入结果"
+          style="rounded=1;html=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="350" y="660" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 结束 -->
+        <mxCell id="end" value="结束"
+          style="ellipse;html=1;strokeWidth=1;strokeColor=#000000;fillColor=#ffffff;"
+          vertex="1" parent="1">
+          <mxGeometry x="360" y="740" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 连线（全部使用直角折线 orthogonalEdgeStyle） -->
+
+        <mxCell id="edge1" edge="1" parent="1" source="start" target="step1"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge2" edge="1" parent="1" source="step1" target="step2"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge3" edge="1" parent="1" source="step2" target="decision"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- YES 分支（直角折线） -->
+        <mxCell id="edgeYes" value="是"
+          edge="1" parent="1" source="decision" target="ocrYes"
+          style="orthogonalEdgeStyle=1;html=1;fontSize=12;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- NO 分支（先向右 → 再向下 → 再向左） -->
+        <mxCell id="edgeNo" value="否"
+          edge="1" parent="1" source="decision" target="ocrNo"
+          style="orthogonalEdgeStyle=1;html=1;fontSize=12;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- NO 分支回到主流程（直角折线） -->
+        <mxCell id="edgeNoBack" edge="1" parent="1" source="ocrNo" target="step3"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- YES 回到用户确认 -->
+        <mxCell id="edgeYesBack" edge="1" parent="1" source="ocrYes" target="step3"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge4" edge="1" parent="1" source="step3" target="step4"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge5" edge="1" parent="1" source="step4" target="step5"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge6" edge="1" parent="1" source="step5" target="end"
+          style="orthogonalEdgeStyle=1;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
